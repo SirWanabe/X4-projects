@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+	<add sel="/jobs">
+		<job id="ror_osr_mk1_escort_lsmall" name="{99992002,106}" startactive="false">
+			<orders>
+			  <order order="Escort" default="true">
+				<param name="formation" value="formationshape.invvshape"/>
+				<param name="formationparam" value="2000m"/>
+			  </order>
+			</orders>
+			<environment buildatshipyard="true"/>
+			<quota wing="1"/>
+			<category faction="ossianraider" tags="[military, fighter]" size="ship_l"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="ossianraider" comparison="exact" />
+			<modifiers subordinate="true"/>
+			<ship macro="ship_arg_l_destroyer_01_b_macro">
+			  <loadout>
+				<level min="1.0" max="1"/>
+			  </loadout>
+			  <owner exact="ossianraider" overridenpc="true"/>
+			  <pilot>
+					<select faction="ossianraider" tags="tag.aipilot"/>
+			  </pilot>
+			  <people>
+				  <fillpercent min="85" max="98" />
+				  <person role="service" weight="20">
+					<select faction="faction.ossianraider" tags="tag.crew"/>
+				  </person>
+				  <person role="marine" weight="80">
+					<select faction="faction.ossianraider" tags="tag.marine"/>
+				  </person>
+			  </people>
+			</ship>
+<!-->
+			<subordinates>
+				<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+			</subordinates>
+<-->
+		</job>
+		<job id="ror_osr_mk1_escort_l2small" name="{99992002,106}" startactive="false">
+			<orders>
+			  <order order="Escort" default="true">
+				<param name="formation" value="formationshape.invvshape"/>
+				<param name="formationparam" value="2000m"/>
+			  </order>
+			</orders>
+			<environment buildatshipyard="true"/>
+			<quota wing="1"/>
+			<category faction="ossianraider" tags="[military, fighter]" size="ship_l"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="ossianraider" comparison="exact" />
+			<modifiers subordinate="true"/>
+			<ship macro="ship_arg_l_destroyer_01_b_macro">
+			  <loadout>
+				<level min="1.0" max="1"/>
+			  </loadout>
+			  <owner exact="ossianraider" overridenpc="true"/>
+			  <pilot>
+					<select faction="ossianraider" tags="tag.aipilot"/>
+			  </pilot>
+			  <people>
+				  <fillpercent min="85" max="98" />
+				  <person role="service" weight="20">
+					<select faction="faction.ossianraider" tags="tag.crew"/>
+				  </person>
+				  <person role="marine" weight="80">
+					<select faction="faction.ossianraider" tags="tag.marine"/>
+				  </person>
+			  </people>
+			</ship>
+		</job>
+		<job id="ror_osr_mk1_escort_xlsmall" name="{99992002,106}" startactive="false">
+			<orders>
+			  <order order="Escort" default="true">
+				<param name="formation" value="formationshape.invvshape"/>
+				<param name="formationparam" value="3000m"/>
+			  </order>
+			</orders>
+			<quota wing="2"/>
+			<category faction="ossianraider" tags="[military, battleship]" size="ship_xl"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="ossianraider" comparison="exact" />
+			<environment buildatshipyard="true"/>
+			<modifiers subordinate="true"/>
+			<ship macro="ror_eureka_mk1_macro">
+			  <loadout>
+				<level min="1.0" max="1.0"/>
+			  </loadout>
+			  <owner exact="faction.ossianraider" overridenpc="true"/>
+			  <pilot>
+					<select faction="ossianraider" tags="tag.aipilot"/>
+			  </pilot>
+			  <people>
+				  <fillpercent min="90" max="100" />
+				  <person role="service" weight="20">
+					<select faction="faction.ossianraider" tags="tag.crew"/>
+				  </person>
+				  <person role="marine" weight="80">
+					<select faction="faction.ossianraider" tags="tag.marine"/>
+				  </person>
+				  <person role="prisoner" weight="1">
+					<select faction="faction.paranid" tags="tag.prisoner"/>
+				  </person>
+			  </people>
+			  <units>
+				<unit category="unitcategory.defence" exact="26"/>
+				<unit category="unitcategory.transport" exact="4"/>
+				<unit category="unitcategory.repair" exact="20"/>
+			  </units>
+<!-->
+			<subordinates>
+			<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+			</subordinates>
+<-->
+			</ship>
+		</job>
+		<job id="ror_osr_mk1_escort_xl2small" name="{99992002,106}" startactive="false">
+			<orders>
+			  <order order="Escort" default="true">
+				<param name="formation" value="formationshape.invvshape"/>
+				<param name="formationparam" value="3000m"/>
+			  </order>
+			</orders>
+			<quota wing="2"/>
+			<category faction="ossianraider" tags="[military, battleship]" size="ship_xl"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="ossianraider" comparison="exact" />
+			<environment buildatshipyard="true"/>
+			<modifiers subordinate="true"/>
+			<ship macro="ror_eureka_mk1_macro">
+			  <loadout>
+				<level min="1.0" max="1.0"/>
+			  </loadout>
+			  <owner exact="faction.ossianraider" overridenpc="true"/>
+			  <pilot>
+					<select faction="ossianraider" tags="tag.aipilot"/>
+			  </pilot>
+			  <people>
+				  <fillpercent min="90" max="100" />
+				  <person role="service" weight="20">
+					<select faction="faction.ossianraider" tags="tag.crew"/>
+				  </person>
+				  <person role="marine" weight="80">
+					<select faction="faction.ossianraider" tags="tag.marine"/>
+				  </person>
+				  <person role="prisoner" weight="1">
+					<select faction="faction.paranid" tags="tag.prisoner"/>
+				  </person>
+			  </people>
+			  <units>
+				<unit category="unitcategory.defence" exact="26"/>
+				<unit category="unitcategory.transport" exact="4"/>
+				<unit category="unitcategory.repair" exact="20"/>
+			  </units>
+			</ship>
+		</job>
+		<job id="ror_osr_mk3_escort_xlsmall" name="{99992002,103}" startactive="false">
+			<orders>
+			  <order order="Escort" default="true">
+				<param name="formation" value="formationshape.invvshape"/>
+				<param name="formationparam" value="3000m"/>
+			  </order>
+			</orders>
+			<quota wing="2"/>
+			<category faction="ossianraider" tags="[military, battleship]" size="ship_xl"/>
+			<location class="galaxy" macro="xu_ep2_universe_macro" faction="ossianraider" comparison="exact" />
+		<!--	<location class="cluster" macro="Cluster_ror1_macro" faction="ossianraider" comparison="exact"/>  -->
+			<environment buildatshipyard="true"/>
+			<modifiers subordinate="true"/>
+			<ship macro="ror_eureka_mk3_macro">
+			  <loadout>
+				<level min="1.0" max="1.0"/>
+			  </loadout>
+			  <owner exact="faction.ossianraider" overridenpc="true"/>
+			  <pilot>
+					<select faction="argon" tags="tag.aipilot"/>
+			  </pilot>
+			  <people>
+				  <fillpercent min="80" max="100" />
+				  <person role="service" weight="20">
+					<select faction="faction.argon" tags="tag.crew"/>
+				  </person>
+				  <person role="marine" weight="80">
+					<select faction="faction.argon" tags="tag.marine"/>
+				  </person>
+				  <person role="prisoner" weight="1">
+					<select faction="faction.paranid" tags="tag.prisoner"/>
+				  </person>
+			  </people>
+			  <units>
+				<unit category="unitcategory.defence" exact="26"/>
+				<unit category="unitcategory.transport" exact="4"/>
+				<unit category="unitcategory.repair" exact="20"/>
+			  </units>
+			</ship>
+<!-->
+			<subordinates>
+				<subordinate job="ror_osr_mk1_escort_lsmall" rebuild="true" />
+			</subordinates>
+<-->
+		</job>
+	</add>
+
+	<remove sel="/jobs/job[@id='ror_osr_mk1_escort_xl'][@name='{99992002,106}']/subordinates"/>
+	<remove sel="/jobs/job[@id='ror_osr_mk1_escort_xl2'][@name='{99992002,106}']/subordinates"/>
+	<remove sel="/jobs/job[@id='ror_osr_mk1_escort_l'][@name='{99992002,106}']/subordinates"/>
+	<remove sel="/jobs/job[@id='ror_osr_mk1_escort_m'][@name='{99992002,106}']/subordinates"/>
+
+  <replace sel="/jobs/job[@id='ror3_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@galaxy">4</replace>
+  <replace sel="/jobs/job[@id='ror3_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@sector">4</replace>
+  <replace sel="/jobs/job[@id='ror4_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@galaxy">4</replace>
+  <replace sel="/jobs/job[@id='ror4_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@sector">4</replace>
+
+  <replace sel="/jobs/job[@id='ror_osr_M_invader_ship']/quota/@galaxy">12</replace>
+  <replace sel="/jobs/job[@id='ror_osr_M_invader_ship']/quota/@sector">3</replace>
+
+  <replace sel="/jobs/job[@id='ror_osr_police_patrol_s']/quota/@galaxy">18</replace>
+
+  <remove sel="/jobs/job[@id='ror3_osr_mk3_XL_defend_Core_oneTime_spawn'][@name='{99992002,101}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror4_osr_mk3_XL_defend_Core_oneTime_spawn'][@name='{99992002,101}']/subordinates"/>
+
+  <remove sel="/jobs/job[@id='ror_osr_mk1_XL_defend_galaxy1'][@name='{99992002,103}']/subordinates"/>
+
+  <remove sel="/jobs/job[@id='ror3_osr_mk1_XL_flagship1'][@name='{99992002,100}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror3_osr_mk1_XL_flagship2'][@name='{99992002,100}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror4_osr_mk1_XL_flagship_command'][@name='{99992002,102}']/subordinates"/>
+
+  <remove sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship1'][@name='{99992002,100}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship2'][@name='{99992002,100}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror4_osr_mk3_XL_flagship_command'][@name='{99992002,102}']/subordinates"/>
+
+  <remove sel="/jobs/job[@id='ror_osr_M_invader_ship'][@name='{99992002,102}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror_osr_M_defender_ship'][@name='{99992002,103}']/subordinates"/>
+
+
+ <add sel="/jobs/job[@id='ror_osr_M_invader_ship'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+ <add sel="/jobs/job[@id='ror_osr_M_defender_ship'][@name='{99992002,103}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror3_osr_mk3_XL_defend_Core_oneTime_spawn'][@name='{99992002,101}']">
+    <subordinates>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+    </subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror4_osr_mk3_XL_defend_Core_oneTime_spawn'][@name='{99992002,101}']">
+    <subordinates>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+    </subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror_osr_mk1_XL_defend_galaxy1'][@name='{99992002,103}']">
+    <subordinates>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+    </subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror3_osr_mk1_XL_flagship1'][@name='{99992002,100}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror3_osr_mk1_XL_flagship2'][@name='{99992002,100}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror4_osr_mk1_XL_flagship_command'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship1'][@name='{99992002,100}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk3_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk3_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship2'][@name='{99992002,100}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk3_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk3_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror4_osr_mk3_XL_flagship_command'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk3_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk3_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_xlsmall" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_l2" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror_osr_L_invader_ship1'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror_osr_L_invader_ship2'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror_osr_mk1_XL_invader_ship1'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror_osr_mk1_XL_invader_ship2'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror_osr_mk1_XL_invader_ship3'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror_osr_mk3_XL_invader_ship1'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror3_osr_mk3_XL_enhanced_Invasion'][@name='{99992002,108}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_m" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+		<subordinate job="ror_osr_mk1_escort_s" rebuild="true"/>
+	</subordinates>
+  </add>
+
+  <replace sel="/jobs/job[@id='ror_osr_mk1_XL_invader_ship2'][@name='{99992002,102}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l2']/@job">ror_osr_mk1_escort_l2small</replace>
+  <replace sel="/jobs/job[@id='ror_osr_mk1_XL_invader_ship3'][@name='{99992002,102}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l2']/@job">ror_osr_mk1_escort_l2small</replace>
+
+  <replace sel="/jobs/job[@id='ror_osr_mk3_XL_invader_ship1'][@name='{99992002,102}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l2']/@job">ror_osr_mk1_escort_l2small</replace>
+  <replace sel="/jobs/job[@id='ror3_osr_mk3_XL_enhanced_Invasion'][@name='{99992002,108}']/subordinates/subordinate[@job='ror_osr_mk1_escort_xl']/@job">ror_osr_mk1_escort_xlsmall</replace>
+</diff>
