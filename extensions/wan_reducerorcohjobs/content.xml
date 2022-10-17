@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content name="Wanabe: Reduce Ossian Raider-COH Jobs" description="Reduces the overall quantity of ships for Ossian Raiders. Intended to improve performance without reducing their offensive capability too much" author="Wanabe" version="220" date="2022-10-13" save="0" id="WanReduceRORCOHJobs" lastupdate="1639217844">
+  <text language="7" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="33" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="34" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="39" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="44" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="45" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="49" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="81" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="82" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="86" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <text language="88" name="Wanabe: Reduced ROR-COH Jobs" description="Converts some of the altered ship configurations to Terran ships and slightly reduces ship quantities further." author="Wanabe"></text>
+  <dependency id="ws_2677740532" optional="false" name="Rise of the Ossian Raider - CoH"></dependency>
+  <dependency id="WanReduceRORJobs" optional="false" name="Wanabe Reduce ROR Jobs"></dependency>
+ </content>
