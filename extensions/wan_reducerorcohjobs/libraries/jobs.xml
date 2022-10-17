@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+  <replace sel="/jobs/job[@id='ror3_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@galaxy">3</replace>
+  <replace sel="/jobs/job[@id='ror3_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@sector">3</replace>
+  <replace sel="/jobs/job[@id='ror4_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@galaxy">3</replace>
+  <replace sel="/jobs/job[@id='ror4_osr_mk3_XL_defend_Core_oneTime_spawn']/quota/@sector">3</replace>
+
+  <replace sel="/jobs/job[@id='ror3_osr_mk3_XL_defend_Core_oneTime_spawn'][@name='{99992002,101}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l']/@job">ror_osr_mk1_escort_lsmall</replace>
+  <replace sel="/jobs/job[@id='ror4_osr_mk3_XL_defend_Core_oneTime_spawn'][@name='{99992002,101}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l']/@job">ror_osr_mk1_escort_lsmall</replace>
+  <replace sel="/jobs/job[@id='ror_osr_mk1_XL_defend_galaxy1'][@name='{99992002,103}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l']/@job">ror_osr_mk1_escort_lsmall</replace>
+  <replace sel="/jobs/job[@id='ror_osr_mk1_XL_defend_galaxy1'][@name='{99992002,103}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l2']/@job">ror_osr_mk1_escort_l2small</replace>
+
+  <replace sel="/jobs/job[@id='ror3_osr_mk1_XL_flagship1'][@name='{99992002,100}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l']/@job">ror_osr_mk1_escort_lsmall</replace>
+  <replace sel="/jobs/job[@id='ror3_osr_mk1_XL_flagship2'][@name='{99992002,100}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l']/@job">ror_osr_mk1_escort_lsmall</replace>
+
+  <remove sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship1'][@name='{99992002,100}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship2'][@name='{99992002,100}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror4_osr_mk1_XL_flagship_command'][@name='{99992002,102}']/subordinates"/>
+  <remove sel="/jobs/job[@id='ror4_osr_mk3_XL_flagship_command'][@name='{99992002,102}']/subordinates"/>
+  
+ <add sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship1'][@name='{99992002,100}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk3_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk3_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk1_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk1_escort_l2small"/>
+		<subordinate job="ror_osr_mk1_escort_l2"/>
+		<subordinate job="ror_osr_mk1_escort_l2"/>
+	</subordinates>
+  </add>
+
+
+  <add sel="/jobs/job[@id='ror4_osr_mk1_XL_flagship_command'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk1_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small"/>
+		<subordinate job="ror_osr_mk1_escort_xl2small"/>
+		<subordinate job="ror_osr_mk1_escort_lsmall"/>
+		<subordinate job="ror_osr_mk1_escort_l2small"/>
+		<subordinate job="ror_osr_mk1_escort_l2"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror3_osr_mk3_XL_flagship2'][@name='{99992002,100}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk3_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk3_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk1_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk1_escort_l2small"/>
+		<subordinate job="ror_osr_mk1_escort_l2"/>
+		<subordinate job="ror_osr_mk1_escort_l2"/>
+	</subordinates>
+  </add>
+
+  <add sel="/jobs/job[@id='ror4_osr_mk3_XL_flagship_command'][@name='{99992002,102}']">
+	<subordinates>
+		<subordinate job="ror_osr_mk3_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk3_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk1_escort_xlsmall"/>
+		<subordinate job="ror_osr_mk1_escort_l2small"/>
+		<subordinate job="ror_osr_mk1_escort_l2small"/>
+		<subordinate job="ror_osr_mk1_escort_l2"/>
+	</subordinates>
+  </add>
+
+ <replace sel="/jobs/job[@id='ror_osr_mk3_XL_invader_ship1'][@name='{99992002,102}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l']/@job">ror_osr_mk1_escort_lsmall</replace>
+ <replace sel="/jobs/job[@id='ror3_osr_mk3_XL_enhanced_Invasion'][@name='{99992002,108}']/subordinates/subordinate[@job='ror_osr_mk1_escort_l']/@job">ror_osr_mk1_escort_lsmall</replace>
+ 
+  <replace sel="/jobs/job[@id='ror_osr_mk1_escort_xlsmall']/ship/@macro">ship_ter_xl_carrier_01_a_macro</replace>
+  <replace sel="/jobs/job[@id='ror_osr_mk1_escort_xl2small']/ship/@macro">ship_atf_xl_battleship_01_a_macro</replace>
+  <replace sel="/jobs/job[@id='ror_osr_mk1_escort_lsmall']/ship/@macro">ship_atf_l_destroyer_01_a_macro</replace>
+  <replace sel="/jobs/job[@id='ror_osr_mk1_escort_l2small']/ship/@macro">ship_ter_l_destroyer_01_a_macro</replace>
+</diff>
