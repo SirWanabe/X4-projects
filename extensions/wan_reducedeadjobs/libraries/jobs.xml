@@ -1,0 +1,1040 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+<!-->
+	Reduced fleet subordinate sizes and overall fleet quantity to enable the ability to run DeadAirJobs	on "Potato" quality.
+
+    With less combat ships there is room to lower the suggested Economy jobs. Faction AI can go beyond "Galaxy" if needed.
+	Lowering Economy ships too far could potentially reduce performance rather than increasing due to Faction AI reacting in various ways to shortages.
+
+Any commented out entries are still set to their default values based on DeadAirJobs 0.08.
+ <-->
+
+<!-->L ECONOMY SHIPS BELOW, MINERS & TRADERS
+Don't reduce ships which have lower Galaxy quota than vanilla, leave ones which were raised by only a small amount.
+10%ish reduction for vanilla jobs
+20%ish reduction for DeadAirJobs
+Actual percentage reductions will tend to be more than suggested, not going to be extremely exact with those
+<-->
+<!-->
+Lower or too close to vanilla Galaxy setting
+  <replace sel="/jobs/job[@id='argon_bio_trader_l'][@name='{20204,1301}']/quota/@galaxy">7</replace>
+  <replace sel="/jobs/job[@id='argon_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">7</replace>
+  <replace sel="/jobs/job[@id='argon_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace>
+  <replace sel="/jobs/job[@id='argon_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">7</replace>
+  <replace sel="/jobs/job[@id='argon_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace>
+
+  <replace sel="/jobs/job[@id='paranid_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace>
+
+  <replace sel="/jobs/job[@id='holyorder_bio_trader_l'][@name='{20204,1301}']/quota/@galaxy">5</replace>
+  <replace sel="/jobs/job[@id='holyorder_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">5</replace>
+  <replace sel="/jobs/job[@id='holyorder_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">5</replace>
+  <replace sel="/jobs/job[@id='holyorder_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">5</replace>
+  <replace sel="/jobs/job[@id='holyorder_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">5</replace>
+  <replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">5</replace>
+  <replace sel="/jobs/job[@id='holyorder_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">5</replace>
+  <replace sel="/jobs/job[@id='holyorder_water_trader_l'][@name='{20204,1501}']/quota/@galaxy">5</replace>
+  
+  <replace sel="/jobs/job[@id='trinity_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">12</replace>
+
+  <replace sel="/jobs/job[@id='terran_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">12</replace>
+  
+  <replace sel="/jobs/job[@id='pioneers_food_trader_l'][@name='{20204,1301}']/quota/@galaxy">5</replace>
+<-->
+
+  <replace sel="/jobs/job[@id='argon_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='argon_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='argon_water_trader_l'][@name='{20204,1501}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='argon_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='argon_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='argon_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='argon_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">11</replace><!-->14<-->
+
+  <replace sel="/jobs/job[@id='antigone_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='antigone_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='antigone_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='antigone_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='antigone_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='antigone_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='antigone_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='antigone_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='antigone_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">8</replace><!-->10<-->
+
+  <replace sel="/jobs/job[@id='paranid_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='paranid_bio_trader_l'][@name='{20204,1301}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_water_trader_l'][@name='{20204,1501}']/quota/@galaxy">6</replace><!-->7<-->
+  <replace sel="/jobs/job[@id='paranid_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='paranid_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='paranid_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='paranid_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">12</replace><!-->14<-->
+
+  <replace sel="/jobs/job[@id='holyorder_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='holyorder_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='holyorder_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='holyorder_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='holyorder_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">8</replace><!-->10<-->
+
+  <replace sel="/jobs/job[@id='trinity_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_bio_trader_l'][@name='{20204,1301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_water_trader_l'][@name='{20204,1501}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='trinity_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">22</replace><!-->25<-->
+  <replace sel="/jobs/job[@id='trinity_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">22</replace><!-->25<-->
+  <replace sel="/jobs/job[@id='trinity_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">10</replace><!-->12<-->
+
+  <replace sel="/jobs/job[@id='teladi_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='teladi_bio_trader_l'][@name='{20204,1301}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_water_trader_l'][@name='{20204,1501}']/quota/@galaxy">16</replace><!-->18<-->
+  <replace sel="/jobs/job[@id='teladi_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='teladi_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='teladi_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='teladi_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">28</replace><!-->36<-->
+
+  <replace sel="/jobs/job[@id='ministry_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+
+  <replace sel="/jobs/job[@id='zyarth_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='zyarth_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_water_trader_l'][@name='{20204,1501}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='zyarth_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='zyarth_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='zyarth_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='split_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">12</replace><!-->16<-->
+
+  <replace sel="/jobs/job[@id='freesplit_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='freesplit_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_l'][@name='{20204,501}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_tech_trader_l'][@name='{20204,301}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_water_trader_l'][@name='{20204,1501}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='freesplit_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">9</replace><!-->10<-->
+  <replace sel="/jobs/job[@id='freesplit_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">9</replace><!-->10<-->
+  <replace sel="/jobs/job[@id='freesplit_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">5</replace><!-->6<-->
+  <replace sel="/jobs/job[@id='freesplit_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">12</replace><!-->16<-->
+
+  <replace sel="/jobs/job[@id='terran_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='terran_food_trader_l'][@name='{20204,1301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='terran_energycell_trader_l'][@name='{20204,101}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='terran_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='terran_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='terran_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='terran_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='terran_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">45</replace><!-->50<-->
+  <replace sel="/jobs/job[@id='terran_free_miner_l_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<-->
+  <replace sel="/jobs/job[@id='terran_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">19</replace><!-->24<-->
+
+  <replace sel="/jobs/job[@id='pioneers_stationtrader_l'][@name='{20204,701}']/quota/@maxgalaxy">10</replace><!-->12<-->
+  <replace sel="/jobs/job[@id='pioneers_equipment_trader_l'][@name='{20204,301}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='pioneers_ship_construction_trader_l'][@name='{20204,301}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='pioneers_refinedgas_trader_l'][@name='{20204,501}']/quota/@galaxy">4</replace><!-->5<-->
+  <replace sel="/jobs/job[@id='pioneers_free_miner_l_liquid'][@name='{20204,5701}']/quota/@galaxy">13</replace><!-->15<-->
+  <replace sel="/jobs/job[@id='pioneers_free_miner_l_mineral'][@name='{20204,5601}']/quota/@galaxy">36</replace><!-->40<-->
+  <replace sel="/jobs/job[@id='pioneers_common_trader_l_da'][@name='{20204,7001}']/quota/@galaxy">4</replace><!-->6<-->
+
+<!-->M/S ECONOMY SHIPS BELOW, TRADERS
+25%ish reduction Factions
+Round down for S round up for M
+
+10%ish reduction Xenon
+<!-->
+	<replace sel="/jobs/job[@id='xenon_stationtrader_m_DA'][@name='{20204,201}']/quota/@maxgalaxy">54</replace><!-->60<!-->
+	<replace sel="/jobs/job[@id='xenon_free_trader_m_energy'][@name='{20204,4801}']/quota/@galaxy">48</replace><!-->54<!-->
+	<replace sel="/jobs/job[@id='xenon_free_trader_m_energy_spl'][@name='{20204,4801}']/quota/@galaxy">16</replace><!-->18<!-->
+	<replace sel="/jobs/job[@id='xenon_free_trader_m_energy_ter'][@name='{20204,4801}']/quota/@galaxy">16</replace><!-->18<!-->
+	<replace sel="/jobs/job[@id='xenon_free_trader_m_long_range_DA'][@name='{20204,7901}']/quota/@galaxy">16</replace><!-->18<!-->
+
+	<replace sel="/jobs/job[@id='argon_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='antigone_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='paranid_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='holyorder_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='trinity_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='teladi_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='ministry_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='zyarth_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='freesplit_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='pioneers_stationtrader_m'][@name='{20204,801}']/quota/@maxgalaxy">18</replace><!-->24<!-->
+
+	<replace sel="/jobs/job[@id='argon_bio_trader_m'][@name='{20204,1401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">10</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">10</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">15</replace><!-->21<!-->
+	<replace sel="/jobs/job[@id='argon_energycell_trader_s'][@name='{20204,201}']/quota/@galaxy">10</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='argon_water_trader_m'][@name='{20204,1601}']/quota/@galaxy">11</replace><!-->14<!-->
+
+	<replace sel="/jobs/job[@id='antigone_bio_trader_m'][@name='{20204,1401}']/quota/@galaxy">8</replace><!-->10<!-->
+
+	<replace sel="/jobs/job[@id='antigone_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">7</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='antigone_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">6</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='antigone_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">12</replace><!-->15<!-->
+	<replace sel="/jobs/job[@id='antigone_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='antigone_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='antigone_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='antigone_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='antigone_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">8</replace><!-->10<!-->
+
+	<replace sel="/jobs/job[@id='paranid_bio_trader_m'][@name='{20204,1401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">10</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">10</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">15</replace><!-->21<!-->
+	<replace sel="/jobs/job[@id='paranid_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">11</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_tech_trader_s'][@name='{20204,401}']/quota/@galaxy">10</replace><!-->14<!-->
+	<replace sel="/jobs/job[@id='paranid_water_trader_m'][@name='{20204,1601}']/quota/@galaxy">11</replace><!-->14<!-->
+
+	<replace sel="/jobs/job[@id='holyorder_bio_trader_m'][@name='{20204,1401}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">7</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">7</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">8</replace><!-->10<!-->
+
+	<replace sel="/jobs/job[@id='trinity_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='trinity_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='trinity_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='trinity_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='trinity_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='trinity_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='trinity_tech_trader_s'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='trinity_water_trader_m'][@name='{20204,1601}']/quota/@galaxy">18</replace><!-->24<!-->
+
+	<replace sel="/jobs/job[@id='teladi_bio_trader_m'][@name='{20204,1401}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">41</replace><!-->54<!-->
+	<replace sel="/jobs/job[@id='teladi_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_tech_trader_s'][@name='{20204,401}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='teladi_water_trader_m'][@name='{20204,1601}']/quota/@galaxy">27</replace><!-->36<!-->
+
+	<replace sel="/jobs/job[@id='ministry_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">14</replace><!-->18<!-->
+	<replace sel="/jobs/job[@id='ministry_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">13</replace><!-->18<!-->
+	<replace sel="/jobs/job[@id='ministry_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">13</replace><!-->18<!-->
+	
+	<replace sel="/jobs/job[@id='zyarth_food_trader_m'][@name='{20204,1401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='zyarth_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_tech_trader_s'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='zyarth_water_trader_m'][@name='{20204,1601}']/quota/@galaxy">12</replace><!-->16<!-->
+
+	<replace sel="/jobs/job[@id='freesplit_food_trader_m'][@name='{20204,1401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='freesplit_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_tech_trader_s'][@name='{20204,401}']/quota/@galaxy">12</replace><!-->16<!-->
+	<replace sel="/jobs/job[@id='freesplit_water_trader_m'][@name='{20204,1601}']/quota/@galaxy">12</replace><!-->16<!-->
+
+	<replace sel="/jobs/job[@id='terran_food_trader_m'][@name='{20204,1401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">27</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='terran_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+	<replace sel="/jobs/job[@id='terran_tech_trader_s'][@name='{20204,401}']/quota/@galaxy">18</replace><!-->24<!-->
+
+	<replace sel="/jobs/job[@id='pioneers_food_trader_m'][@name='{20204,1401}']/quota/@galaxy">7</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_food_trader_s'][@name='{20204,1801}']/quota/@galaxy">6</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_medical_trader_s'][@name='{20204,10011}']/quota/@galaxy">6</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_energycell_trader_m'][@name='{20204,201}']/quota/@galaxy">10</replace><!-->12<!-->
+	<replace sel="/jobs/job[@id='pioneers_equipment_trader_m'][@name='{20204,401}']/quota/@galaxy">7</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">7</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_ship_construction_trader_m'][@name='{20204,401}']/quota/@galaxy">7</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_refinedgas_trader_m'][@name='{20204,601}']/quota/@galaxy">7</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_refinedmineral_trader_m'][@name='{20204,601}']/quota/@galaxy">7</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_tech_trader_m'][@name='{20204,401}']/quota/@galaxy">7</replace><!-->9<!-->
+	<replace sel="/jobs/job[@id='pioneers_tech_trader_s'][@name='{20204,401}']/quota/@galaxy">6</replace><!-->9<!-->
+
+<!-->M/S ECONOMY SHIPS BELOW, MINERS
+20%ish reduction Factions
+10%ish reduction Xenon
+Round down for S round up for M
+<!-->
+	<replace sel="/jobs/job[@id='xenon_free_miner_m_mineral'][@name='{20204,1901}']/quota/@galaxy">48</replace><!-->54<!-->
+	<replace sel="/jobs/job[@id='xenon_free_miner_m_mineral_spl'][@name='{20204,1901}']/quota/@galaxy">32</replace><!-->36<!-->
+	<replace sel="/jobs/job[@id='xenon_free_miner_m_mineral_ter'][@name='{20204,1901}']/quota/@galaxy">16</replace><!-->18<!-->
+
+	<replace sel="/jobs/job[@id='argon_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='argon_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='argon_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='argon_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">5</replace><!-->6<!-->
+
+	<replace sel="/jobs/job[@id='antigone_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='antigone_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='antigone_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">3</replace><!-->4<!-->
+	
+	<replace sel="/jobs/job[@id='paranid_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='paranid_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='paranid_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='paranid_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">5</replace><!-->6<!-->
+
+	<replace sel="/jobs/job[@id='holyorder_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='holyorder_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='holyorder_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='holyorder_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<!-->
+
+	<replace sel="/jobs/job[@id='trinity_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='trinity_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='trinity_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='trinity_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<!-->
+
+	<replace sel="/jobs/job[@id='teladi_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='teladi_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='teladi_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='teladi_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">7</replace><!-->8<!-->
+
+	<replace sel="/jobs/job[@id='zyarth_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='zyarth_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='zyarth_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+	<replace sel="/jobs/job[@id='zyarth_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">5</replace><!-->6<!-->
+
+	<replace sel="/jobs/job[@id='freesplit_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">5</replace><!-->6<!-->
+	<replace sel="/jobs/job[@id='freesplit_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">5</replace><!-->6<!-->
+	<replace sel="/jobs/job[@id='freesplit_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">8</replace><!-->10<!-->
+<!--><replace sel="/jobs/job[@id='freesplit_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">4</replace><-->
+
+	<replace sel="/jobs/job[@id='terran_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">40</replace><!-->50<!-->
+	<replace sel="/jobs/job[@id='terran_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">16</replace><!-->20<!-->
+	<replace sel="/jobs/job[@id='terran_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">7</replace><!-->8<!-->
+	<replace sel="/jobs/job[@id='terran_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">5</replace><!-->6<!-->
+
+	<replace sel="/jobs/job[@id='pioneers_free_miner_m_mineral'][@name='{20204,5601}']/quota/@galaxy">32</replace><!-->40<!-->
+	<replace sel="/jobs/job[@id='pioneers_free_miner_s_mineral'][@name='{20204,5601}']/quota/@galaxy">12</replace><!-->15<!-->
+	<replace sel="/jobs/job[@id='pioneers_free_miner_m_ice'][@name='{20204,2001}']/quota/@galaxy">6</replace><!-->7<!-->
+	<replace sel="/jobs/job[@id='pioneers_free_miner_m_liquid'][@name='{20204,5701}']/quota/@galaxy">10</replace><!-->12<!-->
+
+<!-->COMBAT SHIPS BELOW
+30% reduction factions
+35% reduction for Xenon X/L, 30% M/S
+Bear in mind most of these reductions to fleet counts won't necessarily reduce the total counts as much as suggested due to needing X amount of sectors to build X amount of fleets
+
+Round down for S&M, Round up for L/XL
+<!-->
+	<replace sel="/jobs/job[@id='trinity_destroyer_patrol_l_comp'][@name='{20204,3301}']/quota/@maxgalaxy">8</replace><!-->11<-->
+	<replace sel="/jobs/job[@id='ministry_destroyer_patrol_l_comp'][@name='{20204,3301}']/quota/@maxgalaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_comp'][@name='{20204,3301}']/quota/@maxgalaxy">8</replace><!-->11<-->
+	<replace sel="/jobs/job[@id='zyarth_fighter_patrol_s_border_zone_mission'][@name='{20204,2901}']/quota/@maxgalaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector_colonial'][@name='{20204,3301}']/quota/@maxgalaxy">8</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='terran_destroyer_patrol_l_comp'][@name='{20204,3301}']/quota/@maxgalaxy">8</replace><!-->11<-->
+	<replace sel="/jobs/job[@id='pioneers_destroyer_patrol_l_comp'][@name='{20204,3301}']/quota/@maxgalaxy">8</replace><!-->11<-->
+	<replace sel="/jobs/job[@id='teladi_destroyer_patrol_l_comp_DA'][@name='{20204,3301}']/quota/@maxgalaxy">4</replace><!-->5<-->
+
+<!-->
+	<replace sel="/jobs/job[@id='xenon_carrier_patrol_xl_zone_defence'][@name='{20204,3801}']/quota/@maxgalaxy">6</replace>
+
+Note: Police do serve an important role for detecting enemies and sending defenders to where they need to go. DAJobs already reduces these from vanilla by orders of magnitude
+	<replace sel="/jobs/job[@id='argon_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">14</replace>
+	<replace sel="/jobs/job[@id='antigone_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">10</replace>
+	<replace sel="/jobs/job[@id='paranid_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">14</replace>
+	<replace sel="/jobs/job[@id='holyorder_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">10</replace>
+	<replace sel="/jobs/job[@id='trinity_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">24</replace>
+	<replace sel="/jobs/job[@id='ministry_frigate_police_patrol_m'][@name='{20204,6101}']/quota/@galaxy">30</replace>
+	<replace sel="/jobs/job[@id='ministry_frigate_police_patrol_m'][@name='{20204,6101}']/quota/@maxgalaxy">60</replace>
+	<replace sel="/jobs/job[@id='zyarth_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">16</replace>
+	<replace sel="/jobs/job[@id='court_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">16</replace>
+	<replace sel="/jobs/job[@id='terran_police_patrol_s'][@name='{20204,6101}']/quota/@galaxy">24</replace>
+
+	<replace sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy'][@name='{20204,3201}']/quota/@galaxy">5</replace>
+	<replace sel="/jobs/job[@id='paranid_carrier_patrol_xl_cluster'][@name='{20204,3201}']/quota/@galaxy">5</replace>
+	<replace sel="/jobs/job[@id='trinity_carrier_patrol_xl_cluster'][@name='{20204,3201}']/quota/@galaxy">5</replace>
+	<replace sel="/jobs/job[@id='xenon_carrier_patrol_xl_border_cluster'][@name='{20204,3801}']/quota/@galaxy">5</replace>
+	<replace sel="/jobs/job[@id='zyarth_carrier_patrol_xl_center'][@name='{20204,6201}']/quota/@galaxy">5</replace>
+	<replace sel="/jobs/job[@id='court_carrier_patrol_xl_center'][@name='{20204,3201}']/quota/@galaxy">5</replace>
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_cluster_mission'][@name='{20204,3801}']/quota/@galaxy">4</replace>
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_cluster_mission'][@name='{20204,3801}']/quota/@maxgalaxy">4</replace>
+<-->
+
+	<replace sel="/jobs/job[@id='argon_destroyer_patrol_l_sector'][@name='{20204,3301}']/quota/@galaxy">30</replace><!-->42<-->
+	<replace sel="/jobs/job[@id='argon_frigate_patrol_m_sector_exp'][@name='{20204,2901}']/quota/@galaxy">14</replace><!-->21<-->
+	<replace sel="/jobs/job[@id='argon_frigate_patrol_m_sector_exp_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='argon_dronecarrier_patrol_m_sector'][@name='{20204,5001}']/quota/@galaxy">14</replace><!-->21<-->
+	<replace sel="/jobs/job[@id='argon_dronecarrier_patrol_m_sector_mission'][@name='{20204,5001}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='argon_fighter_patrol_s_zone'][@name='{20204,2901}']/quota/@galaxy">9</replace><!-->14<-->
+
+	<replace sel="/jobs/job[@id='antigone_destroyer_patrol_l_border_sector'][@name='{20204,3301}']/quota/@galaxy">21</replace><!-->30<-->
+	<replace sel="/jobs/job[@id='antigone_frigate_patrol_m_sector_exp'][@name='{20204,2901}']/quota/@galaxy">10</replace><!-->15<-->
+	<replace sel="/jobs/job[@id='antigone_frigate_patrol_m_sector_exp_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='antigone_dronecarrier_patrol_m_sector'][@name='{20204,5001}']/quota/@galaxy">10</replace><!-->15<-->
+	<replace sel="/jobs/job[@id='antigone_dronecarrier_patrol_m_sector_mission'][@name='{20204,5001}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='antigone_fighter_patrol_s_border_zone'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+
+	<replace sel="/jobs/job[@id='paranid_destroyer_patrol_l_sector_exp'][@name='{20204,3301}']/quota/@galaxy">30</replace><!-->42<-->
+	<replace sel="/jobs/job[@id='paranid_fighter_patrol_s_zone'][@name='{20204,2901}']/quota/@galaxy">9</replace><!-->14<-->
+	<replace sel="/jobs/job[@id='paranid_dronecarrier_patrol_m_sector'][@name='{20204,2901}']/quota/@galaxy">14</replace><!-->21<-->
+	<replace sel="/jobs/job[@id='paranid_dronecarrier_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='paranid_corvette_patrol_m_sector'][@name='{20204,2901}']/quota/@galaxy">14</replace><!-->21<-->
+	<replace sel="/jobs/job[@id='paranid_corvette_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='paranid_scout_patrol_s'][@name='{20204,2801}']/quota/@galaxy">9</replace><!-->14<-->
+
+	<replace sel="/jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp'][@name='{20204,3301}']/quota/@galaxy">21</replace><!-->30<-->
+	<replace sel="/jobs/job[@id='holyorder_fighter_patrol_s_zone'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='holyorder_dronecarrier_patrol_m_sector'][@name='{20204,2901}']/quota/@galaxy">10</replace><!-->15<-->
+	<replace sel="/jobs/job[@id='holyorder_dronecarrier_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='holyorder_corvette_patrol_m_sector'][@name='{20204,2901}']/quota/@galaxy">10</replace><!-->15<-->
+	<replace sel="/jobs/job[@id='holyorder_corvette_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">4</replace><!-->5<-->
+
+	<replace sel="/jobs/job[@id='trinity_destroyer_patrol_l_sector_exp_par'][@name='{20204,3301}']/quota/@galaxy">17</replace><!-->24<-->
+	<replace sel="/jobs/job[@id='trinity_destroyer_patrol_l_cluster_exp_hop'][@name='{20204,3301}']/quota/@galaxy">17</replace><!-->24<-->
+	<replace sel="/jobs/job[@id='trinity_fighter_patrol_s_zone'][@name='{20204,2901}']/quota/@galaxy">17</replace><!-->24<-->
+	<replace sel="/jobs/job[@id='trinity_dronecarrier_patrol_m_sector'][@name='{20204,2901}']/quota/@galaxy">25</replace><!-->36<-->
+	<replace sel="/jobs/job[@id='trinity_dronecarrier_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='trinity_corvette_patrol_m_sector_par'][@name='{20204,2901}']/quota/@galaxy">12</replace><!-->18<-->
+	<replace sel="/jobs/job[@id='trinity_corvette_patrol_m_sector_hop'][@name='{20204,2901}']/quota/@galaxy">12</replace><!-->18<-->
+
+	<replace sel="/jobs/job[@id='teladi_destroyer_patrol_l_border_cluster'][@name='{20204,3301}']/quota/@galaxy">25</replace><!-->36<-->
+	<replace sel="/jobs/job[@id='teladi_fighter_patrol_s_zone_exp'][@name='{20204,2901}']/quota/@galaxy">12</replace><!-->18<-->
+
+	<replace sel="/jobs/job[@id='ministry_destroyer_patrol_l_border'][@name='{20204,3301}']/quota/@galaxy">25</replace><!-->36<-->
+	<replace sel="/jobs/job[@id='ministry_dronecarrier_patrol_m_sector'][@name='{20204,5001}']/quota/@galaxy">18</replace><!-->27<-->
+	<replace sel="/jobs/job[@id='ministry_dronecarrier_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">4</replace><!-->5<-->
+
+<!-->
+	<replace sel="/jobs/job[@id='xenon_carrier_patrol_xl_zone_defence'][@name='{20204,3801}']/quota/@galaxy">6</replace>
+<-->
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_defence'][@name='{20204,3801}']/quota/@maxgalaxy">24</replace><!-->36<-->
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_comp'][@name='{20204,3801}']/quota/@maxgalaxy">13</replace><!-->18<-->
+
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_cluster'][@name='{20204,3801}']/quota/@galaxy">106</replace><!-->162<-->
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_defence'][@name='{20204,3801}']/quota/@galaxy">24</replace><!-->36<-->
+	<replace sel="/jobs/job[@id='xenon_destroyer_patrol_xl_comp'][@name='{20204,3801}']/quota/@galaxy">12</replace><!-->18<-->
+	<replace sel="/jobs/job[@id='xenon_frigate_patrol_m_zone_everywhereelse'][@name='{20204,3401}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='xenon_frigate_patrol_m_zone_everywhereelse_mission'][@name='{20204,3401}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='xenon_frigate_patrol_m_sector_spl'][@name='{20204,3401}']/quota/@galaxy">75</replace><!-->108<-->
+	<replace sel="/jobs/job[@id='xenon_frigate_patrol_m_sector_spl_mission'][@name='{20204,3401}']/quota/@galaxy">7</replace><!-->10<-->
+
+	<replace sel="/jobs/job[@id='xenon_fighter_patrol_s_zone'][@name='{20204,3401}']/quota/@galaxy">50</replace><!-->72<-->
+	<replace sel="/jobs/job[@id='xenon_fighter_s_deepspace_single'][@name='{20204,3401}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='xenon_fighter_s_deepspace_group'][@name='{20204,3401}']/quota/@galaxy">4</replace><!-->5<-->
+
+	<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector'][@name='{20204,3301}']/quota/@galaxy">34</replace><!-->48<-->
+	<replace sel="/jobs/job[@id='zyarth_frigate_patrol_m_sector'][@name='{20204,2901}']/quota/@galaxy">16</replace><!-->24<-->
+	<replace sel="/jobs/job[@id='zyarth_frigate_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='zyarth_corvette_patrol_m_sector_exp'][@name='{20204,2901}']/quota/@galaxy">16</replace><!-->24<-->
+	<replace sel="/jobs/job[@id='zyarth_corvette_patrol_m_sector_exp_mission'][@name='{20204,2901}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='zyarth_fighter_patrol_s_border_zone'][@name='{20204,2901}']/quota/@galaxy">11</replace><!-->16<-->
+	<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector_colonial'][@name='{20204,3301}']/quota/@galaxy">6</replace><!-->8<-->
+	<replace sel="/jobs/job[@id='zyarth_frigate_patrol_m_sector_colonial'][@name='{20204,10050}']/quota/@galaxy">6</replace><!-->8<-->
+	<replace sel="/jobs/job[@id='zyarth_corvette_patrol_m_sector_colonial_exp'][@name='{20204,10050}']/quota/@galaxy">6</replace><!-->8<-->
+	<replace sel="/jobs/job[@id='zyarth_fighter_patrol_s_border_zone_colonial'][@name='{20204,10050}']/quota/@galaxy">6</replace><!-->8<-->
+
+	<replace sel="/jobs/job[@id='court_destroyer_patrol_l_border_sector'][@name='{20204,3301}']/quota/@galaxy">34</replace><!-->48<-->
+	<replace sel="/jobs/job[@id='court_frigate_patrol_m_sector'][@name='{20204,2901}']/quota/@galaxy">16</replace><!-->24<-->
+	<replace sel="/jobs/job[@id='court_frigate_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='court_corvette_patrol_m_sector_exp'][@name='{20204,2901}']/quota/@galaxy">16</replace><!-->24<-->
+	<replace sel="/jobs/job[@id='court_fighter_patrol_s_border_zone'][@name='{20204,2901}']/quota/@galaxy">11</replace><!-->16<-->
+
+	<replace sel="/jobs/job[@id='terran_destroyer_patrol_l_mobile_pack'][@name='{20204,3301}']/quota/@galaxy">51</replace><!-->72<-->
+	<replace sel="/jobs/job[@id='terran_frigate_patrol_m_sector_exp'][@name='{20204,2901}']/quota/@galaxy">25</replace><!-->36<-->
+	<replace sel="/jobs/job[@id='terran_frigate_patrol_m_sector_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+
+	<replace sel="/jobs/job[@id='pioneers_destroyer_patrol_l_exp'][@name='{20204,3301}']/quota/@galaxy">19</replace><!-->27<-->
+	<replace sel="/jobs/job[@id='pioneers_corvette_patrol_m'][@name='{20204,7001}']/quota/@galaxy">12</replace><!-->18<-->
+	<replace sel="/jobs/job[@id='pioneers_corvette_patrol_m_mission'][@name='{20204,7001}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='pioneers_fighter_patrol_s_zone'][@name='{20204,2901}']/quota/@galaxy">8</replace><!-->12<-->
+
+	<replace sel="/jobs/job[@id='pioneers_military_patrol_m'][@name='{20204,2901}']/quota/@galaxy">12</replace><!-->18<-->
+	<replace sel="/jobs/job[@id='pioneers_military_patrol_m_mission'][@name='{20204,2901}']/quota/@galaxy">7</replace><!-->10<-->
+	<replace sel="/jobs/job[@id='holyorder_carrier_patrol_xl_DA'][@name='{20204,3201}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='antigone_carrier_patrol_xl_DA'][@name='{20204,3201}']/quota/@galaxy">4</replace><!-->5<-->
+
+	<replace sel="/jobs/job[@id='teladi_military_patrol_m_sector_DA'][@name='{20204,2901}']/quota/@galaxy">18</replace><!-->27<-->
+	<replace sel="/jobs/job[@id='teladi_military_patrol_m_sector_mission_DA'][@name='{20204,2901}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='teladi_dronecarrier_patrol_m_sector_DA'][@name='{20204,5001}']/quota/@galaxy">18</replace><!-->27<-->
+
+	<replace sel="/jobs/job[@id='ministry_military_patrol_m_sector_DA'][@name='{20204,2901}']/quota/@galaxy">18</replace><!-->27<-->
+	<replace sel="/jobs/job[@id='ministry_military_patrol_m_sector_mission_DA'][@name='{20204,2901}']/quota/@galaxy">4</replace><!-->5<-->
+	<replace sel="/jobs/job[@id='ministry_fighter_patrol_s_zone_exp_DA'][@name='{20204,2901}']/quota/@galaxy">12</replace><!-->18<-->
+
+<!-->COMBAT SHIPS WINGS/SUBORDINATES SETUP BELOW.
+Less fleets and bigger groups are preferred however there is a balancing act required in order to reduce the odds of all fleets joining into a single battle and literally experiencing sub 1FPS battles
+Reduced L fleet escorts, increased L escorts for XL fleets. L escorts for low quantity fleets left to the default Job, which is still lower than DeadAirJobs.
+Background Sim speed in empty sector is already improved quite a bit without the following subordinate changes. These mostly effect in sector situations (battles) as far as performance goes.
+<!-->
+
+	<replace sel="/jobs/job[@id='argon_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='argon_destroyer_escort_l']/@job">argon_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='argon_carrier_patrol_xl_center_galaxy']/subordinates/subordinate[@job='argon_destroyer_escort_l']/@job">argon_destroyer_escort_l_xlwan</replace>
+<!-->Note> FOCW mod by Blackrain changes the name of argon_carrier_patrol_xl_center_galaxy Job<-->
+	
+	<replace sel="/jobs/job[@id='argon_destroyer_patrol_l_sector'][@name='{20204,3301}']/subordinates/subordinate[@job='argon_destroyer_escort_l']/@job">argon_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='argon_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='antigone_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='antigone_destroyer_escort_l']/@job">antigone_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='antigone_carrier_patrol_xl_DA'][@name='{20204,3201}']/subordinates/subordinate[@job='antigone_destroyer_escort_l']/@job">antigone_destroyer_escort_l_xlwan</replace>
+
+	<replace sel="/jobs/job[@id='antigone_destroyer_patrol_l_border_sector'][@name='{20204,3301}']/subordinates/subordinate[@job='antigone_destroyer_escort_l']/@job">antigone_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='antigone_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">2</replace>
+	
+	<replace sel="/jobs/job[@id='paranid_carrier_patrol_xl_cluster'][@name='{20204,3201}']/subordinates/subordinate[@job='paranid_destroyer_escort_l']/@job">paranid_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='paranid_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='paranid_destroyer_escort_l']/@job">paranid_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='paranid_destroyer_patrol_l_sector_exp'][@name='{20204,3301}']/subordinates/subordinate[@job='paranid_destroyer_escort_l']/@job">paranid_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='paranid_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='holyorder_carrier_patrol_xl_DA'][@name='{20204,3201}']/subordinates/subordinate[@job='holyorder_destroyer_escort_l']/@job">holyorder_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='holyorder_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='holyorder_destroyer_escort_l']/@job">holyorder_destroyer_escort_l_xlwan</replace>
+
+	<replace sel="/jobs/job[@id='holyorder_destroyer_patrol_l_cluster_exp'][@name='{20204,3301}']/subordinates/subordinate[@job='holyorder_destroyer_escort_l']/@job">holyorder_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='holyorder_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='trinity_carrier_patrol_xl_cluster'][@name='{20204,3201}']/subordinates/subordinate[@job='trinity_destroyer_escort_l_par']/@job">trinity_destroyer_escort_l_par_xlwan</replace>
+	<replace sel="/jobs/job[@id='trinity_destroyer_patrol_l_sector_exp_par'][@name='{20204,3301}']/subordinates/subordinate[@job='trinity_destroyer_escort_l_par']/@job">trinity_destroyer_escort_l_par_smallwan</replace>
+	<replace sel="/jobs/job[@id='trinity_destroyer_patrol_l_cluster_exp_hop'][@name='{20204,3301}']/subordinates/subordinate[@job='trinity_destroyer_escort_l_hop']/@job">trinity_destroyer_escort_l_hop_smallwan</replace>
+	<replace sel="/jobs/job[@id='trinity_destroyer_escort_l_par'][@name='{20204,3301}']/quota/@wing">2</replace>
+	<replace sel="/jobs/job[@id='trinity_destroyer_escort_l_hop'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='ministry_destroyer_patrol_l_border'][@name='{20204,3301}']/subordinates/subordinate[@job='ministry_destroyer_escort_l']/@job">ministry_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='ministry_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='teladi_carrier_patrol_xl_cluster'][@name='{20204,3201}']/subordinates/subordinate[@job='teladi_destroyer_escort_l']/@job">teladi_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='teladi_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='teladi_destroyer_escort_l']/@job">teladi_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='teladi_destroyer_patrol_l_border_cluster'][@name='{20204,3301}']/subordinates/subordinate[@job='teladi_destroyer_escort_l']/@job">teladi_destroyer_escort_l_smallwan</replace>
+<!--><replace sel="/jobs/job[@id='teladi_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">3</replace> <-->
+
+	<replace sel="/jobs/job[@id='buc_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">5</replace><!-->only used on a carrier group<-->
+
+	<replace sel="/jobs/job[@id='zyarth_carrier_patrol_xl_center'][@name='{20204,6201}']/subordinates/subordinate[@job='zyarth_destroyer_escort_l_noescort']/@job">zyarth_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='zyarth_carrier_patrol_xl_zyarthdominion_DA'][@name='{20204,6201}']/subordinates/subordinate[@job='zyarth_destroyer_escort_l_noescort']/@job">zyarth_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='zyarth_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='zyarth_destroyer_escort_l_noescort']/@job">zyarth_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector'][@name='{20204,3301}']/subordinates/subordinate[@job='zyarth_destroyer_escort_l_noescort']/@job">zyarth_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector'][@name='{20204,3301}']/subordinates/subordinate[@job='zyarth_fighter_escort_s_frigate']/@job">zyarth_escort_m_solo_DA</replace>
+	<replace sel="/jobs/job[@id='zyarth_destroyer_patrol_l_border_sector_colonial'][@name='{20204,3301}']/subordinates/subordinate[@job='zyarth_destroyer_escort_l_noescort']/@job">zyarth_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='zyarth_destroyer_escort_l_noescort'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='court_carrier_patrol_xl_center'][@name='{20204,3201}']/subordinates/subordinate[@job='court_destroyer_escort_l_noescort']/@job">court_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='court_destroyer_patrol_l_border_sector'][@name='{20204,3301}']/subordinates/subordinate[@job='court_destroyer_escort_l_noescort']/@job">court_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='court_destroyer_escort_l_noescort'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='terran_battleship_patrol_xl_luna'][@name='{20204,5201}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_atf_noescort</replace>
+	<replace sel="/jobs/job[@id='terran_destroyer_escort_l_atf_noescort'][@name='{20204,3301}']/quota/@wing">3</replace> <!-->ATF Noescort only used on LUNA. Readjusted to be 3+3<-->
+
+	<replace sel="/jobs/job[@id='terran_destroyer_escort_l_teratf_noescort'][@name='{20204,3301}']/quota/@wing">1</replace> <!-->Only used on L leader<-->
+
+<!-->terran_carrier_intervention_xl has no L escort<-->
+	<replace sel="/jobs/job[@id='terran_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='terran_carrier_defence_xl_earth_heavy'][@name='{20204,3201}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='terran_carrier_defence_xl_asteroidbelt_heavy'][@name='{20204,3201}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='terran_carrier_defence_xl_neptune_medium'][@name='{20204,3201}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='terran_carrier_defence_xl_mars_medium'][@name='{20204,3201}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='terran_carrier_patrol_xl_mobile_light'][@name='{20204,3201}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='terran_battleship_intervention_xl'][@name='{20204,10060}']/subordinates/subordinate[@job='terran_destroyer_escort_l']/@job">terran_destroyer_escort_l_xlwan</replace>
+	<replace sel="/jobs/job[@id='terran_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='pioneers_destroyer_patrol_l_exp'][@name='{20204,3301}']/subordinates/subordinate[@job='pioneers_destroyer_escort_l']/@job">pioneers_destroyer_escort_l_smallwan</replace>
+	<replace sel="/jobs/job[@id='pioneers_destroyer_escort_l'][@name='{20204,3301}']/quota/@wing">2</replace>
+
+	<replace sel="/jobs/job[@id='xenon_expedition_DA'][@name='{20204,6301}']/subordinates/subordinate[@job='xenon_destroyer_escort_xl']/@job">xenon_destroyer_escort_xlbigwan</replace>
+
+<add sel="/jobs">
+  <job id="argon_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+	<orders>
+	  <order order="Escort" default="true">
+		<param name="formation" value="formationshape.invvshape"/>
+		<param name="overrideformationskill" value="true"/>
+	  </order>
+	</orders>
+	<category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+	<quota wing="1"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro"/>
+	<environment buildatshipyard="true"/>
+	<modifiers subordinate="true"/>
+	<ship>
+	  <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+	  <loadout>
+		<level min="0.8" max="1.0"/>
+	  </loadout>
+	  <owner exact="argon" overridenpc="true"/>
+	</ship>
+  </job>
+  <job id="argon_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+	<orders>
+	  <order order="Escort" default="true">
+		<param name="formation" value="formationshape.invvshape"/>
+		<param name="overrideformationskill" value="true"/>
+	  </order>
+	</orders>
+	<category faction="argon" tags="[military, destroyer]" size="ship_l"/>
+	<quota wing="4"/>
+	<location class="galaxy" macro="xu_ep2_universe_macro"/>
+	<environment buildatshipyard="true"/>
+	<modifiers subordinate="true"/>
+	<ship>
+	  <select faction="argon" tags="[military, destroyer]" size="ship_l"/>
+	  <loadout>
+		<level min="0.8" max="1.0"/>
+	  </loadout>
+	  <owner exact="argon" overridenpc="true"/>
+	</ship>
+  </job>
+  <job id="antigone_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.xshapeforward"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="antigone" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="antigone" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="antigone" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="antigone_frigate_escort_m"/>
+    </subordinates>
+  </job>
+  <job id="antigone_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.xshapeforward"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="antigone" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="antigone" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="antigone" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="antigone_frigate_escort_m"/>
+    </subordinates>
+  </job>
+  <job id="paranid_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="paranid" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="paranid" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="paranid" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="paranid_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="paranid" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="paranid" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="paranid" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="trinity_destroyer_escort_l_hop_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="trinity" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="trinity" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+          <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="trinity" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="trinity_frigate_escort_m"/>
+    </subordinates>
+  </job>
+  <job id="holyorder_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="holyorder" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="holyorder" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="holyorder" overridenpc="true"/>
+    </ship>
+  </job> 
+  <!-->HOP Vanilla don't use carriers but compensates with bigger L groups. With DAJobs everyone has same fleet sizes but HOP has smaller total capacity.
+  so their XL groups gain additional wing size<-->
+ <job id="holyorder_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="holyorder" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="6"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="holyorder" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="holyorder" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="trinity_destroyer_escort_l_par_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="trinity" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="trinity" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.7" max="1.0"/>
+      </loadout>
+      <owner exact="trinity" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="trinity_destroyer_escort_l_par_xlwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="trinity" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="trinity" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.7" max="1.0"/>
+      </loadout>
+      <owner exact="trinity" overridenpc="true"/>
+    </ship>
+	</job>
+  <job id="ministry_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="ministry" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="ministry" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="ministry" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="ministry_frigate_escort_m"/>
+    </subordinates>
+  </job>
+  <job id="teladi_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="teladi" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="2"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="teladi" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="teladi" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="teladi_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.pointguard"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="teladi" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="5"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="teladi" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.8" max="1.0"/>
+      </loadout>
+      <owner exact="teladi" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="zyarth_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.xshapeforward"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="split" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="split" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.25" max="1.0"/>
+      </loadout>
+      <owner exact="split" overridenpc="true"/>
+    </ship>
+  </job>
+
+  <job id="zyarth_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.xshapeforward"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="split" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="split" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.25" max="1.0"/>
+      </loadout>
+      <owner exact="split" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="court_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.xshapeforward"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="court" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="1"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="court" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.25" max="1.0"/>
+      </loadout>
+      <owner exact="court" overridenpc="true"/>
+    </ship>
+  </job>
+  <job id="court_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.xshapeforward"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="court" tags="[military, destroyer]" size="ship_l"/>
+    <quota wing="4"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="court" tags="[military, destroyer]" size="ship_l"/>
+      <loadout>
+        <level min="0.25" max="1.0"/>
+      </loadout>
+      <owner exact="court" overridenpc="true"/>
+    </ship>
+  </job>
+
+    <job id="terran_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+      <orders>
+        <order order="Escort" default="true">
+          <param name="formation" value="formationshape.xshapeforward"/>
+          <param name="overrideformationskill" value="true"/>
+        </order>
+      </orders>
+      <category faction="terran" tags="[military, destroyer]" size="ship_l"/>
+      <quota wing="1"/>
+      <location class="galaxy" macro="xu_ep2_universe_macro"/>
+      <environment buildatshipyard="true"/>
+      <modifiers subordinate="true"/>
+      <ship>
+        <select faction="terran" tags="[military, destroyer, noatf]" size="ship_l"/>
+        <loadout>
+          <level min="0.8" max="1.0"/>
+        </loadout>
+        <owner exact="terran" overridenpc="true"/>
+      </ship>
+    </job>
+    <job id="terran_destroyer_escort_l_xlwan" name="{20204,3301}" startactive="false">
+      <orders>
+        <order order="Escort" default="true">
+          <param name="formation" value="formationshape.xshapeforward"/>
+          <param name="overrideformationskill" value="true"/>
+        </order>
+      </orders>
+      <category faction="terran" tags="[military, destroyer]" size="ship_l"/>
+      <quota wing="4"/>
+      <location class="galaxy" macro="xu_ep2_universe_macro"/>
+      <environment buildatshipyard="true"/>
+      <modifiers subordinate="true"/>
+      <ship>
+        <select faction="terran" tags="[military, destroyer, noatf]" size="ship_l"/>
+        <loadout>
+          <level min="0.8" max="1.0"/>
+        </loadout>
+        <owner exact="terran" overridenpc="true"/>
+      </ship>
+    </job>
+    <job id="pioneers_destroyer_escort_l_smallwan" name="{20204,3301}" startactive="false">
+      <orders>
+        <order order="Escort" default="true">
+          <param name="formation" value="formationshape.xshapeforward"/>
+          <param name="overrideformationskill" value="true"/>
+        </order>
+      </orders>
+      <category faction="pioneers" tags="[military, destroyer]" size="ship_l"/>
+      <quota wing="1"/>
+      <location class="galaxy" macro="xu_ep2_universe_macro"/>
+      <environment buildatshipyard="true"/>
+      <modifiers subordinate="true"/>
+      <ship>
+        <select faction="pioneers" tags="[military, destroyer]" size="ship_l"/>
+        <loadout>
+          <level min="0.8" max="1.0"/>
+        </loadout>
+        <owner exact="pioneers" overridenpc="true"/>
+      </ship>
+    </job>
+  <job id="xenon_destroyer_escort_xlbigwan" name="{20204,3801}" startactive="false">
+    <orders>
+      <order order="Escort" default="true">
+        <param name="formation" value="formationshape.invvshape"/>
+        <param name="overrideformationskill" value="true"/>
+      </order>
+    </orders>
+    <category faction="xenon" tags="[military, destroyer]" size="ship_xl"/>
+    <quota wing="5"/>
+    <location class="galaxy" macro="xu_ep2_universe_macro"/>
+    <environment buildatshipyard="true"/>
+    <modifiers subordinate="true"/>
+    <ship>
+      <select faction="xenon" tags="[military, destroyer]" size="ship_xl"/>
+      <owner exact="xenon" overridenpc="true"/>
+    </ship>
+    <subordinates>
+      <subordinate job="xenon_frigate_escort_m"/>
+    </subordinates>
+  </job>
+</add>
+</diff>
