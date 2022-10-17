@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content name="Wanabe: Reduce Deadair Jobs" description="Reduces the quantity of ships from Deadair Jobs" author="Wanabe" version="008" date="2022-10-16" save="0" id="WanReduceDeadairJobs" lastupdate="1639217844">
+  <text language="7" name="Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="33" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="34" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="39" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="44" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="45" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="49" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="81" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="82" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="86" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <text language="88" name="Wanabe: Reduced Deadair Jobs" description="Modifies Deadair Jobs. Reduced overall fleet quantity for performance reasons. L patrol fleets smaller, XL fleets bigger." author="Wanabe"></text>
+  <dependency id="DeadAirJobs" optional="false" name="DeadAir Jobs"></dependency>
+</content>
