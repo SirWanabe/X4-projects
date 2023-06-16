@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+  <add sel="/aiscript/attention[@min='unknown']/actions/set_value[@name='$repairfrequency']" pos="after">
+      <do_if value="this.defensible.isclass.station">
+	  <!--> Vanilla value is 10s for all <-->
+        <set_value name="$repairfrequency" exact="30s" />
+      </do_if>
+  </add>
+</diff>

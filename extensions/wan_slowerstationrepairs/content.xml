@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content name="Wanabe: Slower station repairs" description="Slows the repair rate of stations" author="Wanabe" version="600" date="2023-06-16" save="false" id="WanSlowerStationRepairs">
+<text language="" description="Slows down the self-repair capabilities of all stations"/>
+</content>
